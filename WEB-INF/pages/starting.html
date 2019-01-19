@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Job Search</title>
+<script src="WEB-INF/lib/angular.js"></script>
+<script src="WEB-INF/js/app.js"></script>
+<script src="WEB-INF/js/controllers/controller1.js"></script>
+<script src="WEB-INF/lib/angular-cookies.js"></script>
+<script src="WEB-INF/lib/angular-route.js"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body ng-controller="controller1">
+
+<form>
+
+<div ng-model="bookingForm.location">{{bookingForm.location}}</div>
+
+
+<br>
+<div ng-submit=submit()>
+<input type=submit value="Submit" ng-click=submit()>
+</div>
+
+
+<ul>
+	<li ng-repeat="val in jobs[0]">{{val}}</li>
+</ul>
+
+</form>
+</body>
+</html>

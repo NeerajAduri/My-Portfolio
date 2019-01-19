@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Feedback</title>
+     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="/WEB-INF/lib/style.css">
+     <script data-cfasync="false" type="text/javascript"
+  src="/WEB-INF/js/Mailing.js"></script>
+</head>
+
+<body>
+  <h2 class="content-head is-center">Please give your feedback!</h2>
+  <aside >
+       <p>
+           Please provide the below details!
+       </p>
+   </aside>
+
+<!-- START HERE -->
+
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwOZQ_7L5ovg4-jMMlO2mmCmgeVlCM7O-AJMEUi6g/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Full Name </label>
+        <input id="name" name="name" placeholder="First Last" required="required" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Comments </label>
+        <textarea id="message" name="message" rows="10" required="required"
+        placeholder="Typing...."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="email@domain.com"/>
+        <span class="email-invalid" style="display:none">
+          Must be a valid email address</span>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Phone Number">Contact Number (optional) </label>
+        <input id="color" name="color" placeholder="XXX-XXX-XXXX" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2>I greatly appreciate your time! I am still learning and I will try to improve with your suggestions :-) </h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+
+<!-- END -->
+
+</body>
+</html>
